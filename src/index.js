@@ -17,6 +17,7 @@ const bot = new DJS.Client({
 
 bot.commands = new DJS.Collection();
 bot.cooldowns = new Map();
+bot.timeouts = new Map();
 bot.logger = Logger;
 bot.utils = Utils;
 

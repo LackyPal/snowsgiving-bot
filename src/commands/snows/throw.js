@@ -46,6 +46,8 @@ module.exports = {
       await bot.utils.updateSnowDB(interaction.guildId, target.id, {
         kos: db.kos + 1
       });
+
+      bot.timeouts.set(target.id, Date.now());
     }
 
     let embed = new MessageEmbed();
@@ -55,7 +57,7 @@ module.exports = {
     } else {
       embed.setColor(`${result.success ? "GREEN" : "ORANGE"}`)
         .setDescription(`${result.message.replace("{user}", target.toString()).replace("{user}", target.toString())}`)
-        .setImage(`${result.success ?  `${hitImageURL}` : `${missImageURL}`}`);
+        .setImage(`${result.success ? `${hitImageURL}` : `${missImageURL}`}`);
     }
 
     return interaction.editReply({ embeds: [embed] });
