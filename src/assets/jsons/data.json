@@ -1,0 +1,34 @@
+[
+  {
+    "success": true,
+    "message": "Thunk! {user} got pelted with a snowball... you gonna take that lying down?"
+  },
+  {
+    "success": false,
+    "message": "{user} is just too quick! You missed!"
+  },
+  {
+    "success": true,
+    "message": "Sound the trumpets of war (doot doot)—the reckoning has begun. {user} got hit with a snowball!"
+  },
+  {
+    "success": false,
+    "message": "You throw a snowball with all your might, just for it to land a few inches from your feet. You missed! Maybe you should work on your arm strength a bit..."
+  },
+  {
+    "success": true,
+    "message": "{user} wasn’t even paying attention to chat… and they got smacked by a snowball anyways! Hey {user} — use /collect, then /throw to get ‘em back!"
+  },
+  {
+    "success": false,
+    "message": "A shoebill blocked your shot—damn those stinky shoebills. You missed!"
+  },
+  {
+    "success": true,
+    "message": "Pow, right in the kisser! {user} got slugged by a snowball."
+  },
+  {
+    "success": false,
+    "message": "Whoosh! You missed, but there’s always another snowball. /collect some more and show ‘em what for!"
+  }
+]
