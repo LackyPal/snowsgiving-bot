@@ -23,7 +23,8 @@ module.exports = async function loadCommands(bot) {
       options: command.options ?? []
     };
 
-    //await bot.application?.commands.create(data);
+    //registering slash command
+    await bot.application?.commands.create(data);
 
     delete require.cache[require.resolve(`../../${file}`)];
 
