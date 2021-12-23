@@ -56,7 +56,7 @@ module.exports = {
         .setDescription("You can’t throw a snowball at yourself! Unless you like, smush it against your face… so choose a fellow server member!");
     } else {
       embed.setColor(`${result.success ? "GREEN" : "ORANGE"}`)
-        .setDescription(`${result.message.replace("{user}", target.toString()).replace("{user}", target.toString())}`)
+        .setDescription(`${result.message.replace(/{user}/g, target.toString())}`)
         .setImage(`${result.success ? `${hitImageURL}` : `${missImageURL}`}`);
     }
 
